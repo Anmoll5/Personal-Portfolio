@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3ec8263c9d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="personal-portfolio-img/images/Anmol logo (1).png" class="logo">
+                <ul id = "sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <!-- <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span>Anmol</span><br>Mujawdiya From Indore</h1>
+            </div> -->
+            <!-- <div class="images">
+                <img src="personal-portfolio-img/images/R-bg-image.png">
+
+            </div> -->
+            <div class="row">
+                <div class="column">
+                    <div class="header-text">
+                        <p>Web Developer</p>
+                        <h1>Hi, I'm <span>Anmol</span><br>Mujawdiya From Indore</h1>
+                        <h4>Student at NIT Jamshedpur </h4>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="images">
+                        <img src="personal-portfolio-img/images/image1.jpg">
+        
+                    </div>
+                </div>
+              </div>
+             
+        </div>
+    </div>
+<!-- <-------------About---------> 
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="personal-portfolio-img/images/image2.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1><div class="sub-title">About Me</h1>
+                     <p> Hello there! My name is <span>Anmol Mujawdiya </span>student at NIT Jamshedpur, and I'm very passionate and dedicated to my work.
+                        <br /><br />
+                        I possess strong skills in HTML, CSS, Tailwind, JavaScript, ReactJS, Node.js, MongoDB, Express, and programming languages like C and C++. My expertise allows me to create dynamic and responsive web applications. I am committed to continuous learning and applying my knowledge to develop efficient and innovative solutions. Collaboration and problem-solving are at the core of my approach, driving me to excel in the ever-evolving field of software development.
+
+                             </p></p>
+                   <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                   </div>
+                   <div class="tab-contents active-tab" id ="skills">
+                    <ul>
+                        <li><span>Web Development</span><br>Website Development</li>
+                        <li><span>Programming Language</span><br>C CPP Java(Basics)</li>
+                        <li><span>Tools</span><br>VS Code , Github</li>
+                    </ul>
+                   </div>
+                   <div class="tab-contents" id ="experience">
+                    <ul>
+                        <li><span>Current</span><br>Web Developer Intern at Workholics</li>
+                        <li><span>2021-2024</span><br>Cultural Secrtary at NIT Jamshedpur</li>
+                    </ul>
+                   </div>
+                   <div class="tab-contents" id ="education">
+                    <ul>
+                        <li><span>2021</span><br>MCA from NIT Jamshedpur</li>
+                        <li><span>2017</span><br>BCA from Govt Holkar Science Clg</li>
+                        <li><span>2016</span><br>12th from Alpha Senior Secondary School</li>
+                        <li><span>2014</span><br>10th from Alpha Senior Secondary School</li>
+                    </ul>
+                   </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- <--------Services----------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Full-Stack Web Development</h2>
+                <p>Specializing in MERN stack (MongoDB, Express, ReactJS, Node.js), I create dynamic, responsive web applications from front-end to back-end.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <h2> API Development and Integration</h2>
+                <p> I develop efficient APIs with Express and Node.js, integrating third-party services for comprehensive solutions.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fab fa-app-store"></i>
+                <h2>Database Management and Optimization</h2>
+                <p>Expertise in MongoDB, ensuring scalable, optimized databases for effective data handling and performance.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- * <------------------portfolio----------------------> 
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="personal-portfolio-img/images/food delivery image.jpg">
+                <div class="layer">
+                    <h3>Food Delivery App</h3>
+                    <p>Developed a comprehensive food delivery system using the MERN stack, enabling seamless order management and real-time updates.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="personal-portfolio-img/images/work_2.jpg" >
+                <div class="layer">
+                    <h3>Tour-Management App</h3>
+                    <p> Created a dynamic tour management platform with ReactJS, offering a user-friendly interface and efficient booking system.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="personal-portfolio-img/images/work_3.png">
+                <div class="layer">
+                    <h3>Bicycle-Store App</h3>
+                    <p>Built a feature-rich bicycle store application using the MERN stack, providing a robust e-commerce experience with inventory and customer management.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-- ------------------Contact---------------------- -->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>mujawdiyaanmol@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>7770860265</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/anmol-mujawdiya-a8874525b/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/Anmoll5"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://twitter.com/AnmolMujawdiya"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://mail.google.com/mail/u/0/#inbox"><i class="fa-solid fa-envelope"></i></a>
+                </div> 
+                <a href="personal-portfolio-img/images/( resume).pdf"class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="text" name="email" placeholder="Your email" required>
+                    <textarea name="Message" rows="4" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright </p>
+    </div>
+</div>
+
+    <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents  = document.getElementsByClassName("tab-contents");
+      function opentab(tabname){
+        for(tablink of tablinks)
+        {
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents)
+        {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    <!-- Header JS -->
+        <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
